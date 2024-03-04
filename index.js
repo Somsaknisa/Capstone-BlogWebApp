@@ -62,9 +62,7 @@ app.post("/edit/:inputName", (req, res) => {
       let postDate = new Date().toLocaleDateString('en-US', options);
       const{content,title,name} = req.body;
       let editData = {title:title,name:name,content:content,postDate};
-      
       position = index;
-      console.log(position);
       postData.splice(position, 1, editData);
       res.redirect("/");
     }
@@ -77,7 +75,6 @@ app.get("/delete/:inputName", (req, res) => {
   postData.forEach((inputData, index)=>{
     if (delTitle === _.lowerCase(inputData.title)) {
       position = index;
-      console.log(position);
       postData.splice(position, 1);
       res.redirect("/");
     }
