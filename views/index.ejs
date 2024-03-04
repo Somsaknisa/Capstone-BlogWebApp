@@ -1,0 +1,10 @@
+<%- include("partials/header.ejs") %>
+<h1>Your Post</h1>
+<% if (locals.postData) { %>
+<% postData.forEach((post)=> { %>
+    <h1><a href="postData/<%= post.title %>"><%= post.title %></a></h1>
+    <p> <%=post.postDate %></p>
+    <p> <%=post.name %></p>
+    <p> <%=post.content.substring(0, 100) + "..." %><a href="postData/<%= post.title %>">Read More</a></p>
+<% }); %>
+<% } %>

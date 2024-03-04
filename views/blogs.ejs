@@ -1,0 +1,8 @@
+<%- include("partials/header.ejs") %>
+<h1>Create new blog post</h1>
+<form action="/publish" method="POST">
+  <input name="name" type="text" class="feedback-input" placeholder="Name" />
+  <input name="title" type="text" class="feedback-input" placeholder="Title" />
+  <textarea name="content" class="feedback-input" placeholder="Content"></textarea>
+  <input type="submit" value="Publish" />
+</form>

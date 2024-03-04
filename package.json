@@ -1,0 +1,17 @@
+{
+  "name": "24.0-capstone-project---a-web-blog-application",
+  "version": "1.0.0",
+  "description": "Creat a blog Web application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Somsak Nisathon",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21"
+  }
+}

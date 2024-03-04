@@ -1,0 +1,8 @@
+<%- include("partials/header.ejs") %>
+<h1>Edit blog post</h1>
+<form action="/edit/<%=title%>" method="POST">
+  <input name="name" type="text" class="feedback-input" value="<%=name%>" />
+  <input name="title" type="text" class="feedback-input" value="<%=title%>" />
+  <textarea name="content" class="feedback-input"><%=content%></textarea>
+  <input type="submit" value="Save" />
+</form>
